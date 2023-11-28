@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+li, h2, p {
+    font-family: 'Satisfy', cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url(./images/pattern1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 3.75rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 1.25rem;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color:white;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/open-book.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+}
+
+.banner h1 {
+    margin-top: 6.875rem;
+    font-size: 3rem;
+}
+
+.motto {
+    background-image: url(./images/pattern1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.motto h2 {
+    font-size: 1.875rem;
+    margin-left: 3.125rem;
+    padding-top: 1.25rem;
+}
+
+.motto p {
+    font-size: 1.25rem;
+    margin-left: 3.125rem;
+    padding-bottom: 1.25rem;
+}
+
+.pic-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(./images/library.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3% 0;
+}
+
+.photos img {
+    width: 25rem;
+    height: auto;
+    padding: 2%;
+}
+
+.review {
+    background-image: url(./images/pattern1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.875rem 0;
+}
+
+.review h2 {
+    font-size: 2rem;
+    margin-left: 3.125rem;
+}
+
+.review p {
+    font-size: 1.25rem;
+    margin-left: 3.125rem;
+}
+
+.ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3% 0;
+    width: 100%;
+}
+
+.invite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2% ;
+}
+
+.invite img {
+    width: 25rem;
+    height: auto;
+}
+
+.invite h2 {
+    font-size: 1.875rem;
+    padding-top: 1.25rem;
+}
+
+@media only screen and (max-width: 1048px) {
+    .banner {
+        height: 18.75rem;
+    }
+
+    .banner h1 {
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .invite h2, .invite p {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .motto h2, .motto p {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .review h2, .review p {
+        text-align: center;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    nav {
+        align-items: center;
+        height: 2.5rem;
+    }
+
+    li {
+        font-size: 0.875rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .banner {
+        height: 12.5rem;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .motto h2 {
+        font-size: 1.125rem;
+    }
+
+    .motto p {
+        font-size: 0.875rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .review h2 {
+        font-size: 1.25rem;
+    }
+
+    .review p {
+        font-size: 0.875rem;
+    }
+
+    .invite h2 {
+        font-size: 1.125rem;
+    }
+
+}
+
